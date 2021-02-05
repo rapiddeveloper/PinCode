@@ -13,6 +13,13 @@
 		843F63F925CDC5EE002F4E22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843F63F825CDC5EE002F4E22 /* Assets.xcassets */; };
 		843F63FC25CDC5EE002F4E22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843F63FB25CDC5EE002F4E22 /* Preview Assets.xcassets */; };
 		843F63FF25CDC5EE002F4E22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 843F63FD25CDC5EE002F4E22 /* LaunchScreen.storyboard */; };
+		843F640D25CDC641002F4E22 /* DiallerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F640825CDC641002F4E22 /* DiallerButton.swift */; };
+		843F640E25CDC641002F4E22 /* DiallerNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F640925CDC641002F4E22 /* DiallerNavbar.swift */; };
+		843F640F25CDC641002F4E22 /* DiallerButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F640A25CDC641002F4E22 /* DiallerButtons.swift */; };
+		843F641025CDC641002F4E22 /* Dialler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F640B25CDC641002F4E22 /* Dialler.swift */; };
+		843F641125CDC641002F4E22 /* PinCodeIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F640C25CDC641002F4E22 /* PinCodeIndicator.swift */; };
+		843F641425CDC654002F4E22 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F641325CDC654002F4E22 /* AppData.swift */; };
+		843F641625CDC718002F4E22 /* PlaceHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843F641525CDC718002F4E22 /* PlaceHolder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		843F63FB25CDC5EE002F4E22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		843F63FE25CDC5EE002F4E22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		843F640025CDC5EE002F4E22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		843F640825CDC641002F4E22 /* DiallerButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiallerButton.swift; sourceTree = "<group>"; };
+		843F640925CDC641002F4E22 /* DiallerNavbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiallerNavbar.swift; sourceTree = "<group>"; };
+		843F640A25CDC641002F4E22 /* DiallerButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiallerButtons.swift; sourceTree = "<group>"; };
+		843F640B25CDC641002F4E22 /* Dialler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dialler.swift; sourceTree = "<group>"; };
+		843F640C25CDC641002F4E22 /* PinCodeIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinCodeIndicator.swift; sourceTree = "<group>"; };
+		843F641325CDC654002F4E22 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		843F641525CDC718002F4E22 /* PlaceHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,9 @@
 		843F63F125CDC5E6002F4E22 /* PinCode */ = {
 			isa = PBXGroup;
 			children = (
+				843F641525CDC718002F4E22 /* PlaceHolder.swift */,
+				843F641225CDC654002F4E22 /* Models */,
+				843F640625CDC62E002F4E22 /* Screens */,
 				843F63F225CDC5E6002F4E22 /* AppDelegate.swift */,
 				843F63F425CDC5E6002F4E22 /* SceneDelegate.swift */,
 				843F63F625CDC5E6002F4E22 /* ContentView.swift */,
@@ -73,6 +90,34 @@
 				843F63FB25CDC5EE002F4E22 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		843F640625CDC62E002F4E22 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				843F640725CDC641002F4E22 /* Dialler */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		843F640725CDC641002F4E22 /* Dialler */ = {
+			isa = PBXGroup;
+			children = (
+				843F640825CDC641002F4E22 /* DiallerButton.swift */,
+				843F640925CDC641002F4E22 /* DiallerNavbar.swift */,
+				843F640A25CDC641002F4E22 /* DiallerButtons.swift */,
+				843F640B25CDC641002F4E22 /* Dialler.swift */,
+				843F640C25CDC641002F4E22 /* PinCodeIndicator.swift */,
+			);
+			path = Dialler;
+			sourceTree = "<group>";
+		};
+		843F641225CDC654002F4E22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				843F641325CDC654002F4E22 /* AppData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +191,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843F641125CDC641002F4E22 /* PinCodeIndicator.swift in Sources */,
 				843F63F325CDC5E6002F4E22 /* AppDelegate.swift in Sources */,
+				843F640E25CDC641002F4E22 /* DiallerNavbar.swift in Sources */,
+				843F641625CDC718002F4E22 /* PlaceHolder.swift in Sources */,
+				843F641025CDC641002F4E22 /* Dialler.swift in Sources */,
 				843F63F525CDC5E6002F4E22 /* SceneDelegate.swift in Sources */,
 				843F63F725CDC5E6002F4E22 /* ContentView.swift in Sources */,
+				843F640D25CDC641002F4E22 /* DiallerButton.swift in Sources */,
+				843F640F25CDC641002F4E22 /* DiallerButtons.swift in Sources */,
+				843F641425CDC654002F4E22 /* AppData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
